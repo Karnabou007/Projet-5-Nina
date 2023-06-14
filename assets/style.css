@@ -3,8 +3,11 @@ body {
 	margin: auto;
 }
 * {
-	font-family: 'Inter';
+	font-family: 'Inter', sans-serif;
 	font-style: normal;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 .top-header {
 	background-color: white;
@@ -80,19 +83,24 @@ body {
 	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
+	font-family: 'Spectral', sans-serif;
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
 }
-#about-me p {
+
+.about-me__text {
 	width: 80%;
 	font-size: 14px;
 }
 
 #gallery {
-	/*	min-height: 100vh; */
+	min-height: 100vh;
 }
+
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -102,11 +110,12 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #575729;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -137,20 +146,20 @@ body {
 }
 
 .quote {
-	font-family: 'Spectral';
+	font-family: 'Spectral', sans-serif;
 	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
 .quote__text {
-	font-family: Spectral;
+	font-family: 'Spectral', sans-serif;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 2.5rem;
 }
 .quote__author {
-	font-family: Spectral;
+	font-family: 'Spectral', sans-serif;
 	font-weight: 800;
 	font-size: 22px;
 }
@@ -353,4 +362,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
